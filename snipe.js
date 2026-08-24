@@ -1241,10 +1241,9 @@ async function showMainMenu(ctx, edit = false) {
     : `💼 *Wallet ${session.activeWalletIndex + 1}/${session.wallets.length}*\n\`${shortenAddress(wallet.publicKey)}\`\n💰 ${balance?.toFixed(4) || '?'} SOL ${solPrice ? `($${usdValue.toFixed(2)})` : ''} ${errMsg}`;
 
   const text = `
-🚀 *Welcome to axiom auto  Trade Bot* 🤖
+👋 *Welcome to Trojan Solana Bot* 
 
-The most easy your Web3 execution engine.
-AI-driven. Battle-tested. Locked down.
+The Web3 execution engine.
 ━━━━━━━━━━━━━━━━━━
 *What I do for you:* ⬇️
 📊 Scan the market to tell you what to buy, ignore, or stalk
@@ -1256,12 +1255,11 @@ AI-driven. Battle-tested. Locked down.
 ━━━━━━━━━━━━━━━━━━
 ${walletLine}
 
-🏦 *Solbix your fast sniper bot*
 Paste any Solana contract address to analyze
   `;
 
   const keyboard = Markup.inlineKeyboard([
-    [Markup.button.callback('💼 Wallet', 'menu_wallet'), Markup.button.callback('📊 Positions', 'menu_positions')],
+    [Markup.button.callback('🧳 Wallet', 'menu_wallet'), Markup.button.callback('📊 Positions', 'menu_positions')],
     [Markup.button.callback('🚀 Buy', 'menu_buy'), Markup.button.callback('💸 Sell', 'menu_sell')],
     [Markup.button.callback('📜 Trade History', 'menu_history')],
     [Markup.button.callback('📈 PNL Report', 'menu_pnl_report')],
