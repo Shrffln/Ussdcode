@@ -1241,17 +1241,17 @@ async function showMainMenu(ctx, edit = false) {
     : `💼 *Wallet ${session.activeWalletIndex + 1}/${session.wallets.length}*\n\`${shortenAddress(wallet.publicKey)}\`\n💰 ${balance?.toFixed(4) || '?'} SOL ${solPrice ? `($${usdValue.toFixed(2)})` : ''} ${errMsg}`;
 
   const text = `
-👋 *Welcome to Trojan Solana Bot* 
+👋 *Welcome to Trojan Solana 
 
 The Web3 execution engine.
 ━━━━━━━━━━━━━━━━━━
-*What I do for you:* ⬇️
-📊 Scan the market to tell you what to buy, ignore, or stalk
-🎯 Execute entries & exits with sniper-level timing
-🧠 Detect traps, fake pumps, and incoming dumps before they hit
-⚡ Operate at machine-speed — no lag, no emotion
-🔒 Secured with Bitcoin-grade architecture
-🚀 Track price action past your take-profit so winners keep running 🏃
+
+📊 Scan the market to tell you what to buy
+🎯 Auto TP/SL management
+🚨 Detect traps, fake pumps, and incoming dumps 
+⚡ Operate at machine-speed — no lag
+💎 Trade with low fees — Use referral link
+🚀 Track price action and take-profit so winners keep running 🏃
 ━━━━━━━━━━━━━━━━━━
 ${walletLine}
 
